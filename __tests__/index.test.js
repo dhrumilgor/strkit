@@ -1,7 +1,7 @@
-const { capitalize, reverseString, toCamelCase } = require('../index');
+const { capitalizeFirst, reverseString, toCamelCase,capitalizeFirstWords,capitalizeAll } = require('../index');
 
 test('capitalize first letter', () => {
-    expect(capitalize('hello')).toBe('Hello');
+    expect(capitalizeFirst('hello')).toBe('Hello');
 });
 
 test('reverse string', () => {
@@ -11,4 +11,12 @@ test('reverse string', () => {
 test('convert to camel case', () => {
     expect(toCamelCase('hello-world')).toBe('helloWorld');
     expect(toCamelCase('hello_world')).toBe('helloWorld');
+});
+
+test('capital whole string', () => {
+    expect(capitalizeAll('hello')).toBe('HELLO');
+});
+
+test('capitalize first words', () => {
+    expect(capitalizeFirstWords('hello world')).toBe('Hello World');
 });

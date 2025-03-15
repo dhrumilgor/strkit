@@ -1,4 +1,4 @@
-function capitalize(str) {
+function capitalizeFirst(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
@@ -9,5 +9,12 @@ function reverseString(str) {
 function toCamelCase(str) {
     return str.replace(/([-_][a-z])/g, group => group.toUpperCase().replace('-', '').replace('_', ''));
 }
+function capitalizeAll(str) {
+    return str.toUpperCase();
+}
 
-module.exports = { capitalize, reverseString, toCamelCase };
+function capitalizeFirstWords(str) {
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+module.exports = { capitalizeFirst, reverseString, toCamelCase,capitalizeAll,capitalizeFirstWords };
