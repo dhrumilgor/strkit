@@ -1,0 +1,15 @@
+{
+  "name": "@dhrumilgor/strkit",
+  "version": "1.0.0",
+  "description": "strkit is a lightweight and efficient JavaScript utility library for common string operations. It provides essential functions like capitalization, string reversal, and camel case conversion—perfect for simplifying text manipulations in your projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["string", "utility", "text", "manipulation","string function"],
+  "author": "DhrumilGor",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
